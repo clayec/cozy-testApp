@@ -4,7 +4,7 @@
   "cozy-displayName": "Test Application",
   "version": "0.0.3",
   "description": "Test Application description",
-  "icon-path": "main_icon.png"
+  "icon-path": "main_icon.png",
   "cozy-permissions": {
     "contact": {
       "description": "To easily find your contact when talking about someone."

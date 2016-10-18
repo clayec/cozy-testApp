@@ -18,14 +18,16 @@ function updateContactList() {
 	});
 }
 
-function render(contacts){
-  var HTML = ''
-  for (var i = 0; i < contacts.length; i++) {
-    HTML += '<tr data-id="' + contacts[i].id + '">' +
-          +   '<td><label>' + contacts[i].key + '</label></td>'
-          + '</tr>';
-  }
-  document.querySelector('.contact-list').innerHTML = HTML;
+function render(contacts) {
+	var i;
+	var HTML = '';
+	for (i = 0; i < contacts.length; i++) {
+		var template = '<tr data-id="' + contacts[i].id + '">' 
+		+ '<td><label>' + contacts[i].key + '</label></td>' 
+		+ '</tr>';
+		HTML = HTML + template;
+	}
+	document.querySelector('.contact-list').innerHTML = HTML;
 }
 
 document.addEventListener("DOMContentLoaded", updateContactList);

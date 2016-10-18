@@ -1,22 +1,18 @@
-function updateContactList() {
-	cozysdk.defineRequest('Contact', 'all', 'function(doc) { emit(doc.n); }', function(err, res) {
-		if (err != null) {
-			return alert(err);
-		} else {
-			cozysdk.run('Contact', 'all', {}, function(err, res) {
-				if (err != null) {
-					return alert(err);
-				} else {
-					var contacts = JSON.parse("" + res);
-					contacts.forEach(function(contactName) {
-						contactName.key = contactName.key.replace(/ /g, '\u00a0');
-					});
-					render(contacts);
-				}
-			});
-		}
-	});
+function updateContactList(){
+  cozysdk.defineRequest('Contact', 'all', 'function(doc) { emit(doc.n); }', function(err, res) {
+    if (err != null) return alert(err);
+    cozysdk.run('Contact', 'all', {}, function(err, res) {
+      if (err != null) return alert(err);
+      var contacts = JSON.parse("" + res);
+      /* contacts == [
+        {id:"323274828329", key:"Jane;Willson"},
+        {id:"323274827428", key:"John;Smith"}
+      ]*/
+      render(contacts);
+    });
+  });
 }
+
 
 function render(contacts) {
 	var i;

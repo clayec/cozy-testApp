@@ -1,0 +1,13 @@
+{
+  "name": "testApp",
+  "cozy-type": "static",
+  "cozy-displayName": "Test Application",
+  "version": "0.1.1",
+  "description": "Test Application description",
+  "icon-path": "main_icon.png",
+  "cozy-permissions": {
+    "contact": {
+      "description": "To easily find your contact when talking about someone."
+    }
+  }
+}

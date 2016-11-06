@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Your app !</title>
+    </head>
+    <!-- beginning of the app -->
+    <!-- ng-app initilizes the app the angularjs way -->
+    <body ng-app="browserapp">
+
+        <!-- Calls the different view. The configuration is in app.module.js -->
+        <div ng-view></div>
+
+        <!-- This is the library needed to use angularjs -->
+        <script  type="text/javascript" src="vendor/angular.js"></script>
+
+        <!-- This library ables us to use the $routeProvider in app.module.js -->
+        <script type="text/javascript" src="vendor/angular-route.js"></script>
+        <script type="text/javascript" src="app.module.js"></script>
+        <script type="text/javascript" src="controllers/Home.Ctrl.js"></script>
+
+    </body>
+    <!-- end of the app -->
+
+</html>

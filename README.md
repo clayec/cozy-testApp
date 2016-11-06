@@ -1,2 +1,2 @@
 # cozy-testApp
-Cozy cloud test application
+Cozy cloud test application - angularJS

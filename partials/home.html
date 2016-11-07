@@ -5,6 +5,6 @@
 <p ng-show="contactCtrl.error">{{contactCtrl.error}}</p>
 <ul>
     <li ng-repeat="contact in contactCtrl.contacts | filter:searchText track by $index">
-        {{contact.fn}}
+        {{contact}}
     </li>
 </ul>

@@ -2,7 +2,7 @@
   "name": "testApp",
   "cozy-type": "static",
   "cozy-displayName": "Test Application",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Test Application description",
   "icon-path": "main_icon.png",
   "cozy-permissions": {

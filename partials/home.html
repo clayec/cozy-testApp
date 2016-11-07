@@ -1,3 +1,7 @@
-<h1 style="text-align:center">Hello</h1>
+<h1 style="text-align:center">The Contact App <small>Cozy Cloud</small></h1>
 
-<p>Hellaaaaaaooooo {{contactCtrl.hello}} !</p>
+<ul>
+    <li ng-repeat="contact in contactCtrl.contacts">
+        {contact.fn}
+    </li>
+</ul>
